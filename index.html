@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Password Manager</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">PassMan</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Password Manager</h1>
+      <p>
+        Sick of forgetting passwords you swore you'd remember? Our Password
+        Manager stores all your logins in an encrypted vault, generates strong
+        passwords, auto-fills them, and syncs across devices. You just remember
+        one master password—because that's about all any of us can handle.
+      </p>
+      <h2>Your Passwords</h2>
+      <table>
+        <tr>
+          <th>Website Url</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td>www.beta.com</td>
+          <td>xyz@gmail.com</td>
+          <td>xyzadaf</td>
+          <td>Delete</td>
+        </tr>
+        <tr>
+          <td>www.beta.com</td>
+          <td>xyz@gmail.com</td>
+          <td>xyzadaf</td>
+          <td>Delete</td>
+        </tr>
+      </table>
+      <h2>Add a Password</h2>
+      <form action="/submit" method="post">
+        <label for="website">Website url</label>
+        <input type="text" id="website" name="website" required />
+        <br /><br />
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+        <br /><br />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <footer></footer>
+    <script src="/JavaScript/script.js"></script>
+  </body>
+</html>
