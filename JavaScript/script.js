@@ -1,7 +1,7 @@
 function maskPassword(pass) {
   let str = "";
   for (let index = 0; index < pass.length; index++) {
-    str += "*";
+    str += "•";
   }
   return str;
 }
@@ -40,10 +40,18 @@ const showPasswords = () => {
     for (let index = 0; index < arr.length; index++) {
       const element = arr[index];
       str += `<tr>
-<td>${element.website} <img onclick="copyText('${element.website}')" src="/Image/copy.svg" alt="Copy Button"></td>
-<td>${element.username} <img onclick="copyText('${element.username}')" src="/Image/copy.svg" alt="Copy Button"></td>
-<td>${element.password} <img onclick="copyText('${element.password}')" src="/Image/copy.svg" alt="Copy Button"></td>
-<td><button class="btnsm" onclick="deletePassword('${element.website}')">Delete</button></td>
+<td>${element.website} <img onclick="copyText('${
+        element.website
+      }')" src="/Image/copy.svg" alt="Copy Button"></td>
+<td>${element.username} <img onclick="copyText('${
+        element.username
+      }')" src="/Image/copy.svg" alt="Copy Button"></td>
+<td>${maskPassword(element.password)} <img onclick="copyText('${
+        element.password
+      }')" src="/Image/copy.svg" alt="Copy Button"></td>
+<td><button class="btnsm" onclick="deletePassword('${
+        element.website
+      }')">Delete</button></td>
 </tr>`;
     }
     table.innerHTML = table.innerHTML + str;
