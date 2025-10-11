@@ -8,9 +8,10 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 70%);
+  background-color: hsl(0, 0%, 75%);
   max-width: 100vw;
   min-height: 100vh;
+  cursor: pointer;
 }
 
 nav {
@@ -48,10 +49,13 @@ ul > li:hover {
 }
 
 table {
-  border: 2px solid hsl(0, 0%, 40%);
+  border: none;
   background-color: hsl(0, 0%, 100%);
   align-items: center;
   text-align: center;
+  border-radius: 1rem;
+  border: 1px solid hsl(0, 0%, 20%);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.527);
 }
 
 td,
@@ -60,15 +64,61 @@ tr {
   border: 1px solid hsl(0, 0%, 20%);
 }
 
+table,
+td,
+th,
+tr {
+  /* border-collapse: collapse; */
+  padding: 10px 10px 10px 10px;
+  border-radius: 0.5rem;
+}
+
 .container {
   max-width: 80vw;
   margin: 2rem auto;
 }
 
 h1,
-h2,
-h3 {
-  margin: 1rem;
+h2 {
+  margin: 1rem 0rem 0.7rem 0rem;
+}
+
+h1 {
+  text-align: center;
+  background-color: hsl(0, 0%, 1%);
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
+  color: hsl(0, 0%, 100%);
+  box-shadow: 2px 2px 4px hsl(0, 0%, 100%);
+  text-shadow: 1px 1px 2px hsl(0, 0%, 0%);
+}
+
+h1 i {
+  color: hsl(0, 0%, 100%);
+}
+
+h1 del {
+  color: hsl(0, 0%, 90%);
+}
+
+p {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 23%);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0.8rem;
+  background-color: hsl(0, 0%, 1%);
+  border: 1.5px solid hsl(0, 0%, 95%);
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 1px 1px 2px hsl(0, 0%, 1%);
+  box-shadow: 1px 1px 2px hsl(0, 0%, 95%);
 }
 
 .btn {
@@ -79,6 +129,16 @@ h3 {
   border: 1px solid hsl(0, 0%, 1%);
   border-radius: 1rem;
   margin: 2rem 0;
+  cursor: pointer;
+}
+
+.btnsm {
+  padding: 8px 17px;
+  background: black;
+  color: white;
+  font-weight: 900;
+  border: 2px solid gray;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -100,6 +160,21 @@ img {
 
 #alert {
   display: none;
+}
+
+input {
+  outline: none;
+  border-radius: 0.3rem;
+  border: 1px solid hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 99%);
+  display: flex;
+  padding: 5px 5px 5px 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid hsl(0, 0%, 1%);
+  transition: 0.2s ease-in-out;
 }
 
 footer {

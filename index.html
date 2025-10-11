@@ -8,22 +8,21 @@
   </head>
   <body>
     <nav>
-      <div class="logo">PassMan</div>
+      <div class="logo" title="Pass_mAn">Pass_mAn</div>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li title="Home">Home</li>
+        <li title="About Us">About</li>
+        <li title="Contact Us">Contact</li>
       </ul>
     </nav>
     <div class="container">
-      <h1>Password Manager</h1>
-      <p>
+      <h1><i>Pass<del>word</del> mAn<del>ager</del></i></h1>
         Sick of forgetting passwords you swore you'd remember? Our Password
         Manager stores all your logins in an encrypted vault, generates strong
         passwords, auto-fills them, and syncs across devices. You just remember
-        one master password—because that's about all any of us can handle.
+        one master password, because that's about all any of us can handle.
       </p>
-      <h2>Your Passwords</h2>
+      <h2>&nbsp;Your Passwords&nbsp;</h2>
       <table>
         <tr>
           <th>Website Url</th>
@@ -37,24 +36,15 @@
           <td>xyzadaf</td>
           <td>Delete</td>
         </tr>
-        <tr>
-          <td>www.beta.com</td>
-          <td>xyz@gmail.com</td>
-          <td>xyzadaf</td>
-          <td>Delete</td>
-        </tr>
       </table>
-      <h2>Add a Password</h2>
+      <h2>&nbsp;Add a Password&nbsp;</h2>
       <form action="/submit" method="post">
         <label for="website">Website url</label>
-        <input type="text" id="website" name="website" required />
-        <br /><br />
+        <input type="text" id="website" name="website" placeholder="www.xyz.com" required />
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" required />
-        <br /><br />
+        <input type="text" id="username" name="username" placeholder="username/email@gmail.com" required />
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
-        <br />
+        <input type="password" id="password" name="password" placeholder="password123" required />
         <button class="btn" type="submit">Submit</button>
       </form>
     </div>
