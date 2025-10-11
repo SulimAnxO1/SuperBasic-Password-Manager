@@ -132,16 +132,6 @@ h2 {
   cursor: pointer;
 }
 
-.btnsm {
-  padding: 8px 17px;
-  background: black;
-  color: white;
-  font-weight: 900;
-  border: 2px solid gray;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
 .btn:hover {
   transform: scale(0.99);
   opacity: 0.89;
@@ -150,12 +140,30 @@ h2 {
   color: hsl(0, 0%, 20%);
 }
 
+.btnsm {
+  padding: 5px 10px;
+  border-radius: .7rem;
+  cursor: pointer;
+  background-color: hsla(0, 96%, 36%, 0.856);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3rem;
+  border: 1px solid hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+.btnsm:hover {
+  transform: scale(0.99);
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 20%);
+}
+
 img {
   cursor: pointer;
-  position: relative;
-  bottom: 7px;
+  bottom: 10px;
   width: 15px;
-  height: 13px;
+  height: 15px;
+  padding: 10px 10px 10px 10px;
 }
 
 #alert {
@@ -183,4 +191,11 @@ footer {
   color: hsl(0, 0%, 100%);
   max-width: 100vw;
   min-height: 35vh;
+}
+footer p {
+  font-size: 2rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
