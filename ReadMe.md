@@ -13,7 +13,7 @@ Designed with a clean UI and a practical layout for quick access.
 
 ## 🖼️ Preview
 
-## ![Preview] (./Image/preview.png)
+## ![Preview](/Image/preview.png)
 
 ---
 
