@@ -17,20 +17,6 @@ Designed with a clean UI and a practical layout for quick access.
 
 ---
 
-## 📁 File Overview
-
-Password Manager/
-│
-├── index.html # Main structure of the app
-├── CSS/
-│ └── style.css # Styling and layout
-├── JavaScript/
-│ └── script.js # App logic and localStorage handling
-└── Image/
-└── copy.svg # Copy icon for password actions
-
----
-
 ## 🧩 Features
 
 - 🧠 Stores website logins in localStorage
