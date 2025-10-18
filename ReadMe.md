@@ -5,12 +5,6 @@ Designed with a clean UI and a practical layout for quick access.
 
 ---
 
-## 🌐 Live Preview
-
-👉 [pass-man-x01.netlify.app](https://pass-man-x01.netlify.app/)
-
----
-
 ## 🖼️ Preview
 
 ## ![Preview](/Image/preview.png)
